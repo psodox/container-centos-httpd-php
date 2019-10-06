@@ -20,7 +20,7 @@ RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm \
 	        php73-php-xml
 
 
-RUN sed -i 's/;error_log = syslog/error_log = \/dev\/stderr/' /etc/opt/remi/php72/php.ini && \
+RUN sed -i 's/;error_log = syslog/error_log = \/dev\/stderr/' /etc/opt/remi/php73/php.ini && \
     ln -sf /dev/stdout /var/log/httpd/access_log && \
     ln -sf /dev/stderr /var/log/httpd/error_log && \
     ln -sf /opt/remi/php73/root/usr/share/php /usr/share/php && \
