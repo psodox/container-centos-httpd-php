@@ -1,7 +1,7 @@
 FROM centos:centos7
 LABEL maintainer="Denny Brandes <d.brandes@pixel-pro.de>"
 
-RUN yum -y update &\
+RUN yum -y update \
  && yum -y install \
                     epel-release \
                     httpd
