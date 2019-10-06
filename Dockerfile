@@ -9,7 +9,7 @@ RUN yum -y update &\
 
 RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm \
     && \
-        yum-config-manager --enable remi-php73
+        yum-config-manager --enable remi-php73 \
     && \
         yum -y install \
             php73-php \
